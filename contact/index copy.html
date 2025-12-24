@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせページ | 25JZ0113の自己紹介サイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="25JZ0113のお問い合わせページ" />
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a class="logo-img" href="./">
+          <img src="../img/sannsyokudanngo_touka.png" alt="三色団子の画像">
+        </a>
+        <a class="logo-title" href="./">
+          <h1>お問い合わせページ</h1>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <form action="" method="post" onsubmit="alert('送信されました');" onreset="alert('リセットされました');">
+        <fieldset class="contact-form">
+          <legend>送信内容</legend>
+          <fieldset class="name-fieldset">
+            <legend>氏名</legend>
+            <label for="name">名前：</label>
+            <input type="text" name="name" id="name" placeholder="例：山田 太郎" required>
+
+            <label for="kana">フリガナ：</label>
+            <input type="text" name="kana" id="kana" placeholder="例：ヤマダ タロウ" required>
+          </fieldset>
+
+          <fieldset class="age-fieldset">
+            <legend>年齢</legend>
+            <input type="number" name="age" id="age" min="0" placeholder="例：0" required>
+            <label for="age">歳</label>
+          </fieldset>
+
+          <fieldset class="contact-fieldset">
+            <legend>連絡先</legend>
+            <label for="email">連絡先：</label>
+            <input type="email" name="email" id="email" placeholder="例：user@example.com" required>
+          </fieldset>
+
+          <fieldset class="sex-fieldset">
+            <legend>性別を選んでください</legend>
+            <div>
+              <input type="radio" name="sexes" id="male" value="male">
+              <label for="male">男性</label>
+
+              <input type="radio" name="sexes" id="female" value="female">
+              <label for="female">女性</label>
+
+              <input type="radio" name="sexes" id="others" value="others" checked>
+              <label for="others">その他</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="prefecture-fieldset">
+            <legend>居住地域</legend>
+
+            <select name="prefecture">
+              <option value="">都道府県を選択</option>
+              <!-- 北海道地方 -->
+              <option value="北海道">北海道</option>
+
+              <!-- 東北地方 -->
+              <option value="青森県">青森県</option>
+              <option value="岩手県">岩手県</option>
+              <option value="宮城県">宮城県</option>
+              <option value="秋田県">秋田県</option>
+              <option value="山形県">山形県</option>
+              <option value="福島県">福島県</option>
+
+              <!-- 関東地方 -->
+              <option value="茨城県">茨城県</option>
+              <option value="栃木県">栃木県</option>
+              <option value="群馬県">群馬県</option>
+              <option value="埼玉県">埼玉県</option>
+              <option value="千葉県">千葉県</option>
+              <option value="東京都">東京都</option>
+              <option value="神奈川県">神奈川県</option>
+
+              <!-- 中部地方 -->
+              <option value="新潟県">新潟県</option>
+              <option value="富山県">富山県</option>
+              <option value="石川県">石川県</option>
+              <option value="福井県">福井県</option>
+              <option value="山梨県">山梨県</option>
+              <option value="長野県">長野県</option>
+              <option value="岐阜県">岐阜県</option>
+              <option value="静岡県">静岡県</option>
+              <option value="愛知県">愛知県</option>
+
+              <!-- 近畿地方 -->
+              <option value="三重県">三重県</option>
+              <option value="滋賀県">滋賀県</option>
+              <option value="京都府">京都府</option>
+              <option value="大阪府">大阪府</option>
+              <option value="兵庫県">兵庫県</option>
+              <option value="奈良県">奈良県</option>
+              <option value="和歌山県">和歌山県</option>
+
+              <!-- 中国地方 -->
+              <option value="鳥取県">鳥取県</option>
+              <option value="島根県">島根県</option>
+              <option value="岡山県">岡山県</option>
+              <option value="広島県">広島県</option>
+              <option value="山口県">山口県</option>
+
+              <!-- 四国地方 -->
+              <option value="徳島県">徳島県</option>
+              <option value="香川県">香川県</option>
+              <option value="愛媛県">愛媛県</option>
+              <option value="高知県">高知県</option>
+
+              <!-- 九州地方 -->
+              <option value="福岡県">福岡県</option>
+              <option value="佐賀県">佐賀県</option>
+              <option value="長崎県">長崎県</option>
+              <option value="熊本県">熊本県</option>
+              <option value="大分県">大分県</option>
+              <option value="宮崎県">宮崎県</option>
+              <option value="鹿児島県">鹿児島県</option>
+              <option value="沖縄県">沖縄県</option>
+            </select>
+
+          </fieldset>
+
+          <fieldset class="comments-fieldset">
+            <legend>ご意見・ご感想</legend>
+            <textarea name="comments" rows="10" cols="80" maxlength="600"></textarea>
+          </fieldset>
+
+          <div class="form-buttons">
+            <button type="submit" class="submit">送信</button>
+
+            <button type="reset" class="reset">リセット</button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="flex-right">
+        <button class="top-page" onclick="location.href='../'">トップページに戻る</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p><small>&copy; 2025 25JZ0113</small></p>
+  </footer>
+</body>
+
+</html>
