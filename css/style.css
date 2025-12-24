@@ -227,7 +227,7 @@ nav {
   aspect-ratio: 1/1;
   overflow: hidden;
   border-radius: 25px;
-  box-shadow: 5px 5px 25px -5px #B5B5B5;
+  box-shadow: 10px 10px 30px -5px #B5B5B5;
   transition: all 0.3s;
 }
 
@@ -311,4 +311,5 @@ footer p {
   justify-content: right;
   padding: 0px 20px;
 }
+
 
